@@ -4,6 +4,9 @@ Notes about what I learned
 
 Licensed under WTFPL - http://www.wtfpl.net/about/
 
+### js
+* in order for fetch to be useful, you should run it with credentials. `fetch(fetchurl, {credentials: 'same-origin'})` is the best I guess.
+
 ### git
 
 * `git push --force-with-lease origin master` will push stuff with force, but will check if the stuff at your `origin/master` is the same as at the actual repo. Clever! [more](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
