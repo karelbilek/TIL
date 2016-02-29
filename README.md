@@ -6,6 +6,7 @@ Licensed under WTFPL - http://www.wtfpl.net/about/
 
 ### js
 * in order for fetch to be useful, you should run it with credentials. `fetch(fetchurl, {credentials: 'same-origin'})` is the best I guess.
+* JSON.stringify does *not* stringify object keys always in the same order! Sometime it does, sometime it doesn't, it's pretty random frankly. The same objects are stringified the same, *but* different, deeply-equal objects *can be stringified differently*. Use [json-stable-stringify](https://www.npmjs.com/package/json-stable-stringify) instead!!
 
 ### git
 
