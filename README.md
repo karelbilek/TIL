@@ -12,6 +12,7 @@ Licensed under WTFPL - http://www.wtfpl.net/about/
 ### git
 
 * `git push --force-with-lease origin master` will push stuff with force, but will check if the stuff at your `origin/master` is the same as at the actual repo. Clever! [more](https://developer.atlassian.com/blog/2015/04/force-with-lease/)
+* you can use `edit` in `git rebase -i` to break commits. Use `edit` in the interactive file, then `git reset HEAD~` and commit with `git add -p`. Nerdy! But useful.
 
 ### other web stuff
 
